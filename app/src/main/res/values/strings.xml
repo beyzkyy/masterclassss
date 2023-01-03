@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">masterclassgiris</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="required">required</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="x">X</string>
+    <string name="ders">ders</string>
+    <string name="mail">mail</string>
+    <string name="bolum">bolum</string>
+    <string name="tarih">tarih</string>
+    <string name="iban">IBAN</string>
+    <string name="okul">okul</string>
+    <string name="ad_soyad">ad-soyad</string>
+    <string name="telno">tel-no</string>
+    <string name="adsoyad">ad-soyad</string>
+</resources>

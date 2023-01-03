@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".personeleklemeekrani">
+
+    <EditText
+        android:id="@+id/adsoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="82dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/adsoyad"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        android:lines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintEnd_toEndOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <EditText
+        android:id="@+id/okul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/okul"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintStart_toStartOf="@+id/adsoyad"
+        app:layout_constraintTop_toBottomOf="@+id/adsoyad"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/iban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="IBAN"
+        android:inputType="number"
+        android:maxLength="26"
+        android:maxLines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintEnd_toEndOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="tarih"
+        android:inputType="time"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintStart_toStartOf="@+id/iban"
+        app:layout_constraintTop_toTopOf="@+id/iban" />
+
+    <EditText
+        android:id="@+id/bolum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:ems="10"
+        android:hint="bolum"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintBottom_toTopOf="@+id/ders"
+        app:layout_constraintStart_toStartOf="@+id/ders" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="278dp"
+        android:ems="10"
+        android:hint="mail"
+        android:inputType="textEmailAddress"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/telno"
+        app:layout_constraintTop_toBottomOf="@+id/telno" />
+
+    <EditText
+        android:id="@+id/ders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="ders"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintStart_toStartOf="@+id/okul"
+        app:layout_constraintTop_toBottomOf="@+id/okul" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="37dp"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarih" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="236dp"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/telno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/telno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="tel-no"
+        android:inputType="phone"
+        android:textColor="#2B2525"
+        android:textColorHint="#4A4141"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="@+id/ders"
+        app:layout_constraintStart_toStartOf="@+id/ders"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".ogrencieklemeekrani">
+
+    <EditText
+        android:id="@+id/ders2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:ems="10"
+        android:hint="ders"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/okul2"
+        app:layout_constraintTop_toBottomOf="@+id/okul2" />
+
+    <EditText
+        android:id="@+id/dersgunleri2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ders gunleri"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/ders2"
+        app:layout_constraintTop_toBottomOf="@+id/ders2" />
+
+    <EditText
+        android:id="@+id/tarih2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="tarih"
+        android:inputType="time"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/mail2"
+        app:layout_constraintTop_toTopOf="@+id/mail2" />
+
+    <EditText
+        android:id="@+id/mail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="mail"
+        android:inputType="textEmailAddress"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/velino2"
+        app:layout_constraintTop_toBottomOf="@+id/velino2" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="kaydet"
+        android:text="kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarih2" />
+
+    <EditText
+        android:id="@+id/okul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="okul"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/adsoyad2"
+        app:layout_constraintTop_toBottomOf="@+id/adsoyad2" />
+
+    <EditText
+        android:id="@+id/adsoyad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="ad-soyad"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <EditText
+        android:id="@+id/telno2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="tel-no"
+        android:inputType="phone"
+
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintEnd_toEndOf="@+id/sınıf2"
+        app:layout_constraintTop_toBottomOf="@+id/sınıf2" />
+
+    <EditText
+        android:id="@+id/sınıf2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="sınıf"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/derssaatleri2"
+        app:layout_constraintTop_toBottomOf="@+id/derssaatleri2" />
+
+    <EditText
+        android:id="@+id/velino2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="veli-no"
+        android:inputType="phone"
+
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/telno2"
+        app:layout_constraintTop_toBottomOf="@+id/telno2" />
+
+    <EditText
+        android:id="@+id/derssaatleri2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="ders saatleri"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#332D2D"
+        app:layout_constraintStart_toStartOf="@+id/dersgunleri2"
+        app:layout_constraintTop_toTopOf="@+id/dersgunleri2" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="geridon"
+        android:text="x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
